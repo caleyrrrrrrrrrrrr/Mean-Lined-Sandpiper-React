@@ -1,134 +1,58 @@
-import React, { Fragment } from 'react'
+import React, { useEffect } from 'react'
+import './form.css'
 
-import PropTypes from 'prop-types'
+const Form = () => {
+  useEffect(() => {
+    // Load Turnstile script once
+    if (!document.querySelector('#cf-turnstile-script')) {
+      const script = document.createElement('script')
+      script.id = 'cf-turnstile-script'
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js'
+      script.async = true
+      document.body.appendChild(script)
+    }
+  }, [])
 
-import './booking-contact-form.css'
-
-const BookingContactForm = (props) => {
   return (
-    <div
-      className={`booking-contact-form-contact1 thq-section-padding ${props.rootClassName} `}
+    <form
+      className="contact-form"
+      method="POST"
+      action="/api/contact"
     >
-      <div className="thq-section-max-width thq-flex-column">
-        <div className="booking-contact-form-section-title thq-flex-column">
-          <div id="contact" className="booking-contact-form-content">
-            <h2 className="thq-heading-2">
-              {props.heading1 ?? (
-                <Fragment>
-                  <span className="booking-contact-form-text17">
-                    Contact us
-                  </span>
-                </Fragment>
-              )}
-            </h2>
-            <span className="booking-contact-form-text11">
-              {props.text ?? (
-                <Fragment>
-                  <span className="booking-contact-form-text19">
-                    We will be in touch soon!
-                  </span>
-                </Fragment>
-              )}
-            </span>
-          </div>
-        </div>
-        <form className="booking-contact-form-form thq-flex-column">
-          <div className="booking-contact-form-container1">
-            <div className="booking-contact-form-input1">
-              <label
-                htmlFor="contact-form-5-first-name"
-                className="thq-body-small"
-              >
-                First name
-              </label>
-              <input
-                type="text"
-                id="contact-form-5-first-name"
-                placeholder="First Name"
-                className="thq-input"
-              />
-            </div>
-            <div className="booking-contact-form-input2">
-              <label
-                htmlFor="contact-form-5-last-name"
-                className="thq-body-small"
-              >
-                Last name
-              </label>
-              <input
-                type="text"
-                id="contact-form-5-last-name"
-                placeholder="Last Name"
-                className="thq-input"
-              />
-            </div>
-          </div>
-          <div className="booking-contact-form-container2">
-            <div className="booking-contact-form-input3">
-              <label htmlFor="contact-form-5-email" className="thq-body-small">
-                Email
-              </label>
-              <input
-                type="email"
-                id="contact-form-5-email"
-                required="true"
-                placeholder="Email"
-                className="thq-input"
-              />
-            </div>
-            <div className="booking-contact-form-input4">
-              <label htmlFor="contact-form-5-phone" className="thq-body-small">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                id="contact-form-5-phone"
-                placeholder="Phone Number"
-                className="thq-input"
-              />
-            </div>
-          </div>
-          <div className="booking-contact-form-container3">
-            <label htmlFor="contact-form-5-message" className="thq-body-small">
-              Message
-            </label>
-            <textarea
-              id="contact-form-5-message"
-              rows="3"
-              placeholder="Enter your message"
-              className="booking-contact-form-textarea thq-input"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="booking-contact-form-button thq-button-filled"
-          >
-            <span className="thq-body-small">
-              {props.action ?? (
-                <Fragment>
-                  <span className="booking-contact-form-text18">Submit</span>
-                </Fragment>
-              )}
-            </span>
-          </button>
-        </form>
+      <div className="form-field">
+        <label htmlFor="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" required />
       </div>
-    </div>
+
+      <div className="form-field">
+        <label htmlFor="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" required />
+      </div>
+
+      <div className="form-field">
+        <label htmlFor="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div className="form-field">
+        <label htmlFor="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+
+      <div className="form-field">
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+      </div>
+
+      {/* Cloudflare Turnstile widget */}
+      <div
+        className="cf-turnstile"
+        data-sitekey="0x4AAAAAABuAAVEr_amKdyWQ"
+      ></div>
+
+      <button type="submit">Submit</button>
+    </form>
   )
 }
 
-BookingContactForm.defaultProps = {
-  heading1: undefined,
-  action: undefined,
-  text: undefined,
-  rootClassName: '',
-}
-
-BookingContactForm.propTypes = {
-  heading1: PropTypes.element,
-  action: PropTypes.element,
-  text: PropTypes.element,
-  rootClassName: PropTypes.string,
-}
-
-export default BookingContactForm
+export default Form
