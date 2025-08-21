@@ -10,8 +10,8 @@ const Contact = (props) => {
   return (
     <div className="contact-container">
       <Helmet>
-        <title>Contact - Mean Lined Sandpiper</title>
-        <meta property="og:title" content="Contact - Mean Lined Sandpiper" />
+        <title>Contact - 8b The Bookcase</title>
+        <meta property="og:title" content="Contact - 8b The Bookcase" />
       </Helmet>
       <Navbar4
         link1={
