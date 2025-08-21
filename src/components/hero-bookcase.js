@@ -24,8 +24,7 @@ const HeroBookcase = (props) => {
               <Fragment>
                 <span className="hero-bookcase-text18">
                   <span>
-                    A cosy flat providing all of your needs in the seaside town
-                    of Dawlish
+                    Just twelve minutes walk from the sea and the train station, The Bookcase is tucked away in a quiet part of Dawlish, Devon.
                   </span>
                   <br></br>
                   <br></br>
@@ -34,6 +33,9 @@ const HeroBookcase = (props) => {
                     oasis. Find plenty of blankets, notebooks and inspiration
                     here. Ideal for readers, wild swimmers and those looking to
                     simply rest and recharge.
+
+                    A reading retreat in which to read, write, think or simply be - surrounded by books.
+                    Immerse yourself in a story, or write your own, at The Bookcase. 
                   </span>
                   <br></br>
                   <br></br>
