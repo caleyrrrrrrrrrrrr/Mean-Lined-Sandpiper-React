@@ -1,11 +1,23 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import './booking-contact-form.css'
 
 const BookingContactForm = (props) => {
   const [submitting, setSubmitting] = useState(false)
-  const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
+  const [error, setError] = useState('')
+
+  useEffect(() => {
+    // Load Turnstile script once
+    const script = document.createElement('script')
+    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js'
+    script.async = true
+    script.defer = true
+    document.body.appendChild(script)
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -13,35 +25,27 @@ const BookingContactForm = (props) => {
     setError('')
     setSuccess('')
 
-    const token = window.turnstile?.getResponse()
-    if (!token) {
-      setError('Please complete the CAPTCHA')
-      setSubmitting(false)
-      return
-    }
+    const form = e.target
+    const formData = new FormData(form)
 
-    const formData = {
-      firstName: e.target['contact-form-5-first-name'].value,
-      lastName: e.target['contact-form-5-last-name'].value,
-      email: e.target['contact-form-5-email'].value,
-      phone: e.target['contact-form-5-phone'].value,
-      message: e.target['contact-form-5-message'].value,
-      turnstileToken: token
+    // Add Turnstile token
+    if (window.turnstile) {
+      formData.append('cf-turnstile-response', window.turnstile.getResponse())
     }
 
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: formData,
       })
+
       if (res.ok) {
         setSuccess('Your message has been sent!')
-        e.target.reset()
-        window.turnstile.reset()
+        form.reset()
+        if (window.turnstile) window.turnstile.reset()
       } else {
-        const data = await res.json()
-        setError(data.error || 'Submission failed')
+        const text = await res.text()
+        setError(text || 'Submission failed')
       }
     } catch (err) {
       setError('Submission failed')
@@ -93,6 +97,7 @@ const BookingContactForm = (props) => {
               <input
                 type="text"
                 id="contact-form-5-first-name"
+                name="firstName"
                 placeholder="First Name"
                 className="thq-input"
                 required
@@ -108,6 +113,7 @@ const BookingContactForm = (props) => {
               <input
                 type="text"
                 id="contact-form-5-last-name"
+                name="lastName"
                 placeholder="Last Name"
                 className="thq-input"
                 required
@@ -123,6 +129,7 @@ const BookingContactForm = (props) => {
               <input
                 type="email"
                 id="contact-form-5-email"
+                name="email"
                 placeholder="Email"
                 className="thq-input"
                 required
@@ -135,6 +142,7 @@ const BookingContactForm = (props) => {
               <input
                 type="tel"
                 id="contact-form-5-phone"
+                name="phone"
                 placeholder="Phone Number"
                 className="thq-input"
               />
@@ -147,6 +155,7 @@ const BookingContactForm = (props) => {
             </label>
             <textarea
               id="contact-form-5-message"
+              name="message"
               rows="3"
               placeholder="Enter your message"
               className="booking-contact-form-textarea thq-input"
@@ -154,7 +163,7 @@ const BookingContactForm = (props) => {
             ></textarea>
           </div>
 
-          {/* Cloudflare Turnstile */}
+          {/* Turnstile */}
           <div
             className="cf-turnstile"
             data-sitekey="YOUR_TURNSTILE_SITE_KEY"
