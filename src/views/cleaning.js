@@ -12,8 +12,8 @@ const Cleaning = (props) => {
   return (
     <div className="cleaning-container">
       <Helmet>
-        <title>Cleaning - Mean Lined Sandpiper</title>
-        <meta property="og:title" content="Cleaning - Mean Lined Sandpiper" />
+        <title>Cleaning - 8b The Bookcase</title>
+        <meta property="og:title" content="Cleaning - 8b The Bookcase" />
       </Helmet>
       <Navbar4
         link1={
