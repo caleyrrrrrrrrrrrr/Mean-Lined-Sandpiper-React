@@ -28,8 +28,8 @@ export async function onRequestPost({ request, env }) {
 
   // MailChannels payload
   const mailPayload = {
-    personalizations: [{ to: [{ email: "YOUR_RECEIVING_EMAIL@example.com" }] }],
-    from: { email: "no-reply@YOURDOMAIN.com" },
+    personalizations: [{ to: [{ email: "rcaley1@protonmail.com" }] }],
+    from: { email: "contact-no-reply@8bthebookcase.co.uk" },
     subject: `New contact from ${firstName} ${lastName}`,
     content: [
       {
