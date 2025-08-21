@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './form.css'
+import './booking-contact-form.css'
 
 const Form = () => {
   useEffect(() => {
