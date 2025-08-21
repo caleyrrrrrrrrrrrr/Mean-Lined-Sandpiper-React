@@ -1,0 +1,181 @@
+.hero-bookcase-header78 {
+  gap: var(--dl-layout-space-threeunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.hero-bookcase-column {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-unit);
+}
+ 
+.hero-bookcase-content1 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.hero-bookcase-text10 {
+  text-align: center;
+  font-family: "Georgia";
+}
+ 
+.hero-bookcase-text11 {
+  text-align: center;
+}
+ 
+.hero-bookcase-actions {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-layout-space-unit);
+}
+ 
+.hero-bookcase-button1 {
+  text-decoration: none;
+}
+ 
+.hero-bookcase-button2 {
+  text-decoration: none;
+}
+ 
+.hero-bookcase-content2 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.hero-bookcase-row-container {
+  width: 100%;
+}
+ 
+.hero-bookcase-placeholder-image10 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image11 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image12 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image13 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image14 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image15 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image16 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image17 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image18 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image19 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image20 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-placeholder-image21 {
+  width: 400px;
+  height: 400px;
+}
+ 
+.hero-bookcase-container2 {
+  display: contents;
+}
+ 
+.hero-bookcase-text15 {
+  display: inline-block;
+}
+ 
+.hero-bookcase-text16 {
+  display: inline-block;
+}
+ 
+.hero-bookcase-text17 {
+  display: inline-block;
+}
+ 
+.hero-bookcase-text18 {
+  display: inline-block;
+}
+ 
+.hero-bookcase-text27 {
+  display: inline-block;
+}
+ 
+@media(max-width: 1200px) {
+  .hero-bookcase-actions {
+    width: 253px;
+    height: 79px;
+  }
+  .hero-bookcase-placeholder-image12 {
+    width: 408px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .hero-bookcase-content2 {
+    width: 100%;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .hero-bookcase-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-bookcase-button1 {
+    width: 100%;
+  }
+  .hero-bookcase-button2 {
+    width: 100%;
+  }
+  .hero-bookcase-button3 {
+    width: 100%;
+  }
+}

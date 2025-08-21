@@ -1,0 +1,137 @@
+.content-list4-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.content-list4-max-width {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-layout-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.content-list4-content1 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.content-list4-ul1 {
+  align-items: flex-start;
+}
+ 
+.content-list4-li10 {
+  align-items: flex-start;
+}
+ 
+.content-list4-image {
+  width: 200px;
+  object-fit: cover;
+}
+ 
+.content-list4-content2 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.content-list4-content3 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.content-list4-ul2 {
+  align-items: flex-start;
+}
+ 
+.content-list4-ul3 {
+  align-items: flex-start;
+}
+ 
+.content-list4-li11 {
+  align-items: flex-start;
+}
+ 
+.content-list4-ul4 {
+  align-items: flex-start;
+  padding-left: var(--dl-layout-space-fiveunits);
+}
+ 
+.content-list4-text10 {
+  display: inline-block;
+}
+ 
+.content-list4-text11 {
+  display: inline-block;
+}
+ 
+.content-list4-text12 {
+  display: inline-block;
+}
+ 
+.content-list4-text14 {
+  font-style: italic;
+}
+ 
+.content-list4-text16 {
+  font-style: italic;
+}
+ 
+.content-list4-text26 {
+  display: inline-block;
+}
+ 
+.content-list4-text27 {
+  display: inline-block;
+}
+ 
+.content-list4-text28 {
+  display: inline-block;
+}
+ 
+.content-list4-text29 {
+  display: inline-block;
+}
+ 
+.content-list4-text30 {
+  display: inline-block;
+}
+ 
+.content-list4-text33 {
+  display: inline-block;
+}
+ 
+.content-list4-text34 {
+  display: inline-block;
+}
+ 
+.content-list4-text37 {
+  display: inline-block;
+}
+ 
+@media(max-width: 1200px) {
+  .content-list4-content9 {
+    text-align: justify;
+  }
+  .content-list4-text14 {
+    font-style: italic;
+  }
+  .content-list4-text16 {
+    font-style: italic;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .content-list4-ul4 {
+    padding-left: var(--dl-layout-space-threeunits);
+  }
+}
+ 
+@media(max-width: 479px) {
+  .content-list4-ul4 {
+    padding-left: var(--dl-layout-space-oneandhalfunits);
+  }
+}

@@ -1,0 +1,65 @@
+.hero-cleaning-container1 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.hero-cleaning-image {
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 100%;
+  position: absolute;
+}
+ 
+.hero-cleaning-max-width {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.hero-cleaning-container2 {
+  gap: var(--dl-layout-space-halfunit);
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.hero-cleaning-text1 {
+  text-align: center;
+  font-family: "Georgia";
+}
+ 
+.hero-cleaning-text2 {
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
+  text-align: center;
+}
+ 
+.hero-cleaning-text4 {
+  display: inline-block;
+}
+ 
+.hero-cleaning-text5 {
+  display: inline-block;
+}
+ 
+.hero-cleaning-text6 {
+  display: inline-block;
+}
+ 
+
+ 
+@media(max-width: 1200px) {
+  .hero-cleaning-text1 {
+    fill: var(--dl-color-theme-neutral-light);
+    color: var(--dl-color-theme-neutral-light);
+  }
+}
