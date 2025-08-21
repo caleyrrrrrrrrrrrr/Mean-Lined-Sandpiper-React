@@ -12,8 +12,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Mean Lined Sandpiper</title>
-        <meta property="og:title" content="Mean Lined Sandpiper" />
+        <title>8b The Bookcase</title>
+        <meta property="og:title" content="8b The Bookcase" />
       </Helmet>
       <Navbar4
         link1={
