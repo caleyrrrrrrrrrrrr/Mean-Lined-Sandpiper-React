@@ -166,7 +166,7 @@ const BookingContactForm = (props) => {
           {/* Turnstile */}
           <div
             className="cf-turnstile"
-            data-sitekey="YOUR_TURNSTILE_SITE_KEY"
+            data-sitekey="0x4AAAAAABuAAVEr_amKdyWQ"
             data-theme="light"
           ></div>
 
