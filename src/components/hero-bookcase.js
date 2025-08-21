@@ -74,7 +74,10 @@ const HeroBookcase = (props) => {
             </span>
           </a>
         </div>
-        <button className="thq-button-filled hero-bookcase-button3">
+        <a
+          href="/#contact"
+          className="thq-button-filled hero-bookcase-button2"
+        >
           <span className="thq-body-small">
             {props.action111 ?? (
               <Fragment>
@@ -82,7 +85,7 @@ const HeroBookcase = (props) => {
               </Fragment>
             )}
           </span>
-        </button>
+        </a>
       </div>
       <div className="hero-bookcase-content2">
         <div className="hero-bookcase-row-container thq-mask-image-horizontal thq-animated-group-container-horizontal">
