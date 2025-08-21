@@ -198,30 +198,11 @@ const Cleaning = (props) => {
         }
       ></ContentList4>
       <BookingContactForm
-        text={
-          <Fragment>
-            <span className="cleaning-text51">
-              Please let us know as much detail as possible about your place.
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
-              />
-            </span>
-          </Fragment>
-        }
-        action={
-          <Fragment>
-            <span className="cleaning-text52">Submit</span>
-          </Fragment>
-        }
-        heading1={
-          <Fragment>
-            <span className="cleaning-text53">Contact us</span>
-          </Fragment>
-        }
-        rootClassName="booking-contact-formroot-class-name2"
-      ></BookingContactForm>
+        heading1={<span className="home-text44">Contact us</span>}
+        text={<span className="home-text42">We will be in touch soon!</span>}
+        action={<span className="home-text43">Submit</span>}
+        rootClassName="booking-contact-formroot-class-name"
+      />
     </div>
   )
 }
