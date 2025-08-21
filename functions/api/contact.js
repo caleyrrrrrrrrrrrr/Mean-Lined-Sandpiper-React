@@ -37,7 +37,7 @@ export async function onRequestPost({ request, env }) {
         },
       ],
       from: { email: "contact@8bthebookcase.co.uk" }, // verified sender
-      reply_to: { email }, // user email
+      reply_to: { email }, // user's email
       subject: `New contact from ${firstName} ${lastName}`,
       content: [
         {
@@ -53,19 +53,22 @@ ${message}`,
       ],
     }
 
-    // Send via MailChannels Email API
+    // Send via new MailChannels Email API
     const mailResponse = await fetch("https://api.mailchannels.net/tx/v1/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${env.MAILCHANNELS_API_KEY}`, // store as Worker secret
+        Authorization: `Bearer ${env.MAILCHANNELS_API_KEY}`, // API key stored as Worker secret
       },
       body: JSON.stringify(mailPayload),
     })
 
     if (!mailResponse.ok) {
       const text = await mailResponse.text()
-      return new Response(text || "Failed to send email", { status: 500 })
+      return new Response(
+        `Failed to send email: ${text || mailResponse.statusText}`,
+        { status: 500 }
+      )
     }
 
     return new Response("Message sent!", { status: 200 })
