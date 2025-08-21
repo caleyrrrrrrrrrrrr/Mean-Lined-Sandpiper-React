@@ -36,7 +36,7 @@ export async function onRequestPost({ request, env }) {
           to: [{ email: "rcaley1@protonmail.com" }], // your recipient
         },
       ],
-      from: { email: "contact-no-reply@8bthebookcase.co.uk" }, // verified sender
+      from: { email: "contact@8bthebookcase.co.uk" }, // verified sender
       reply_to: { email }, // user email
       subject: `New contact from ${firstName} ${lastName}`,
       content: [
