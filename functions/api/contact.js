@@ -30,6 +30,7 @@ export async function onRequestPost({ request, env }) {
   const mailPayload = {
     personalizations: [{ to: [{ email: "rcaley1@protonmail.com" }] }],
     from: { email: "contact-no-reply@8bthebookcase.co.uk" },
+    reply_to: { email },
     subject: `New contact from ${firstName} ${lastName}`,
     content: [
       {
