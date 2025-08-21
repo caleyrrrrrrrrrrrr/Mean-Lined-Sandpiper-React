@@ -58,7 +58,8 @@ ${message}`,
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${env.MAILCHANNELS_API_KEY}`, // API key stored as Worker secret
+        "Accept":"application/json"
+        "X-Api-Key" : `${env.MAILCHANNELS_API_KEY}`, // API key stored as Worker secret
       },
       body: JSON.stringify(mailPayload),
     })
