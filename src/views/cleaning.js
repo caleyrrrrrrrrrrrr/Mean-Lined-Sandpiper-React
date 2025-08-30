@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet'
 import Navbar4 from '../components/navbar4'
 import HeroCleaning from '../components/hero-cleaning'
 import ContentList4 from '../components/content-list4'
-import BookingContactForm from '../components/booking-contact-form'
 import './cleaning.css'
 
 const Cleaning = (props) => {
@@ -197,12 +196,6 @@ const Cleaning = (props) => {
           </Fragment>
         }
       ></ContentList4>
-      <BookingContactForm
-        heading1={<span className="home-text44">Contact us</span>}
-        text={<span className="home-text42">We will be in touch soon!</span>}
-        action={<span className="home-text43">Submit</span>}
-        rootClassName="booking-contact-formroot-class-name"
-      />
     </div>
   )
 }
