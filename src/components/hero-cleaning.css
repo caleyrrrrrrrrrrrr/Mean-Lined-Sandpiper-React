@@ -35,6 +35,8 @@
 .hero-cleaning-text1 {
   text-align: center;
   font-family: "Georgia";
+  fill: var(--dl-color-theme-neutral-light);
+  color: var(--dl-color-theme-neutral-light);
 }
  
 .hero-cleaning-text2 {
