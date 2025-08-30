@@ -20,7 +20,7 @@ const HeroCleaning = (props) => {
           <h1 className="hero-cleaning-text1 thq-heading-1">
             {props.heading11 ?? (
               <Fragment>
-                <span className="hero-cleaning-text4">
+                <span>
                   The Bookcase Cleaning Services
                 </span>
               </Fragment>
