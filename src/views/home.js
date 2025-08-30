@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet'
 import Navbar4 from '../components/navbar4'
 import HeroBookcase from '../components/hero-bookcase'
 import Reviews from '../components/reviews'
-import BookingContactForm from '../components/booking-contact-form'
 
 import './home.css'
 
