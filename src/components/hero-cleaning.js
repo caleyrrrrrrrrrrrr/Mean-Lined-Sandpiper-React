@@ -36,15 +36,13 @@ const HeroCleaning = (props) => {
             )}
           </h3>
         </div>
-        <button type="button" className="thq-button-filled">
-          <span>
+          <a href="/contact" className="thq-button-filled">
             {props.action1 ?? (
               <Fragment>
                 <span className="hero-cleaning-text5">Contact Us</span>
               </Fragment>
             )}
-          </span>
-        </button>
+          </a>
       </div>
     </div>
   )
