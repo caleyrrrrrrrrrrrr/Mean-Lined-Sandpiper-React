@@ -64,14 +64,6 @@ const Home = () => {
         author3Name={<span className="home-text40">Bheks &amp; Tatiana</span>}
         author4Name={<span className="home-text41">Wendy</span>}
       />
-
-      {/* Contact Form */}
-      <BookingContactForm
-        heading1={<span className="home-text44">Contact us</span>}
-        text={<span className="home-text42">We will be in touch soon!</span>}
-        action={<span className="home-text43">Submit</span>}
-        rootClassName="booking-contact-formroot-class-name"
-      />
     </div>
   )
 }
