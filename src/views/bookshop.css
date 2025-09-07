@@ -1,0 +1,21 @@
+
+.cleaning-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.cleaning-text10 {
+  display: inline-block;
+}
+
+@media(max-width: 1200px) {
+  .cleaning-text25 {
+    font-style: italic;
+  }
+  .cleaning-text27 {
+    font-style: italic;
+  }
+}
