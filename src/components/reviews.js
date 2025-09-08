@@ -146,7 +146,7 @@ const Reviews = (props) => {
                     <strong className="thq-body-large">
                       {props.author5Name ?? (
                         <Fragment>
-                          <span className="reviews-text23">Dave</span>
+                          <span className="reviews-text23">Darren</span>
                         </Fragment>
                       )}
                     </strong>
