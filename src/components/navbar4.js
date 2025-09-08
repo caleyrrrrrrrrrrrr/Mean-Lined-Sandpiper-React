@@ -33,6 +33,16 @@ const Navbar4 = (props) => {
                 </Fragment>
               )}
             </Link>
+            <Link
+              to="/contact"
+              className="navbar4-link21 thq-body-small thq-link"
+            >
+              {props.link3 ?? (
+                <Fragment>
+                  <span className="navbar4-text23">Contact</span>
+                </Fragment>
+              )}
+            </Link>
           </nav>
           <div className="navbar4-buttons1">
             <a
@@ -105,6 +115,16 @@ const Navbar4 = (props) => {
                   </Fragment>
                 )}
               </Link>
+              <Link
+                to="/contact"
+                className="navbar4-link21 thq-body-small thq-link"
+              >
+                {props.link3 ?? (
+                  <Fragment>
+                    <span className="navbar4-text23">Contact</span>
+                  </Fragment>
+                )}
+              </Link>
             </nav>
             <div className="navbar4-buttons2">
               <a
@@ -158,6 +178,7 @@ Navbar4.defaultProps = {
   action1: undefined,
   action2: undefined,
   link2: undefined,
+  link3: undefined,
 }
 
 Navbar4.propTypes = {
@@ -172,6 +193,7 @@ Navbar4.propTypes = {
   action1: PropTypes.element,
   action2: PropTypes.element,
   link2: PropTypes.element,
+  link3: PropTypes.element,
 }
 
 export default Navbar4

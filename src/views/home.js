@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet'
 import Navbar4 from '../components/navbar4'
 import HeroBookcase from '../components/hero-bookcase'
 import Reviews from '../components/reviews'
-import BookingContactForm from '../components/booking-contact-form'
 
 import './home.css'
 
@@ -63,14 +62,6 @@ const Home = () => {
         author2Name={<span className="home-text39">Dan &amp; Maisy</span>}
         author3Name={<span className="home-text40">Bheks &amp; Tatiana</span>}
         author4Name={<span className="home-text41">Wendy</span>}
-      />
-
-      {/* Contact Form */}
-      <BookingContactForm
-        heading1={<span className="home-text44">Contact us</span>}
-        text={<span className="home-text42">We will be in touch soon!</span>}
-        action={<span className="home-text43">Submit</span>}
-        rootClassName="booking-contact-formroot-class-name"
       />
     </div>
   )

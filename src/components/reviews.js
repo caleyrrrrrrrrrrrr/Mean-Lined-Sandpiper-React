@@ -138,6 +138,39 @@ const Reviews = (props) => {
               </div>
             </div>
           </div>
+          <div className="thq-animated-card-bg-2">
+            <div className="thq-animated-card-bg-1">
+              <div data-animated="true" className="thq-card reviews-card4">
+                <div className="reviews-container18">
+                  <div className="reviews-container19">
+                    <strong className="thq-body-large">
+                      {props.author5Name ?? (
+                        <Fragment>
+                          <span className="reviews-text23">Dave</span>
+                        </Fragment>
+                      )}
+                    </strong>
+                  </div>
+                </div>
+                <span className="reviews-text18 thq-body-small">
+                  {props.review5 ?? (
+                    <Fragment>
+                      <span className="reviews-text19">
+                        Thank you for creating such a perfect little bolthole! 
+                        I've been here for a couple of days with work, and your 
+                        place has been a calm, welcoming retreat- just what 
+                        I needed. It gave me the space to relax and detach from 
+                        the world for a while after long days. Your kindness 
+                        and thoughtfulness as a host made it feel all the 
+                        more special. I'd be very happy to return one day 
+                        when I am in the area again!
+                      </span>
+                    </Fragment>
+                  )}
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -154,6 +187,8 @@ Reviews.defaultProps = {
   author2Name: undefined,
   author1Name: undefined,
   review2: undefined,
+  review5: undefined,
+  author5Name: undefined,
 }
 
 Reviews.propTypes = {
@@ -166,6 +201,8 @@ Reviews.propTypes = {
   author2Name: PropTypes.element,
   author1Name: PropTypes.element,
   review2: PropTypes.element,
+  review5: PropTypes.element,
+  author5Name: PropTypes.element,
 }
 
 export default Reviews

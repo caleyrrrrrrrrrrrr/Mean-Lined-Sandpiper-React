@@ -77,7 +77,7 @@ const HeroBookcase = (props) => {
           </a>
         </div>
         <a
-          href="/#contact"
+          href="/contact"
           className="thq-button-filled hero-bookcase-button2"
         >
           <span className="thq-body-small">
