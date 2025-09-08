@@ -144,7 +144,7 @@ const Reviews = (props) => {
                 <div className="reviews-container18">
                   <div className="reviews-container19">
                     <strong className="thq-body-large">
-                      {props.author4Name ?? (
+                      {props.author5Name ?? (
                         <Fragment>
                           <span className="reviews-text23">Dave</span>
                         </Fragment>
@@ -153,7 +153,7 @@ const Reviews = (props) => {
                   </div>
                 </div>
                 <span className="reviews-text18 thq-body-small">
-                  {props.review4 ?? (
+                  {props.review5 ?? (
                     <Fragment>
                       <span className="reviews-text19">
                         Thank you for creating such a perfect little bolthole! 
@@ -187,6 +187,8 @@ Reviews.defaultProps = {
   author2Name: undefined,
   author1Name: undefined,
   review2: undefined,
+  review5: undefined,
+  author5Name: undefined,
 }
 
 Reviews.propTypes = {
@@ -199,6 +201,8 @@ Reviews.propTypes = {
   author2Name: PropTypes.element,
   author1Name: PropTypes.element,
   review2: PropTypes.element,
+  review5: PropTypes.element,
+  author5Name: PropTypes.element,
 }
 
 export default Reviews
