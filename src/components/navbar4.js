@@ -33,6 +33,16 @@ const Navbar4 = (props) => {
                 </Fragment>
               )}
             </Link>
+            <Link
+              to="/contact"
+              className="navbar4-link21 thq-body-small thq-link"
+            >
+              {props.link2 ?? (
+                <Fragment>
+                  <span className="navbar4-text23">Contact</span>
+                </Fragment>
+              )}
+            </Link>
           </nav>
           <div className="navbar4-buttons1">
             <a
@@ -102,6 +112,16 @@ const Navbar4 = (props) => {
                 {props.link2 ?? (
                   <Fragment>
                     <span className="navbar4-text23">Cleaning Service</span>
+                  </Fragment>
+                )}
+              </Link>
+              <Link
+                to="/contact"
+                className="navbar4-link21 thq-body-small thq-link"
+              >
+                {props.link2 ?? (
+                  <Fragment>
+                    <span className="navbar4-text23">Contact</span>
                   </Fragment>
                 )}
               </Link>
