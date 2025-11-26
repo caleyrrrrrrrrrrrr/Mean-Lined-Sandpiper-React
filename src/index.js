@@ -10,7 +10,7 @@ import {
 import './style.css'
 import Home from './views/home'
 import Contact from './views/contact'
-import Dawlish from './views/dawlish'
+import none from './views/dawlish'
 import NotFound from './views/not-found'
 
 const App = () => {
