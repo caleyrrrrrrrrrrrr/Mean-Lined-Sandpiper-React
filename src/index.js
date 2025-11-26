@@ -10,7 +10,7 @@ import {
 import './style.css'
 import Home from './views/home'
 import Contact from './views/contact'
-import Cleaning from './views/dawlish'
+import Dawlish from './views/dawlish'
 import NotFound from './views/not-found'
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
       <Switch>
         <Route component={Home} exact path="/" />
         <Route component={Contact} exact path="/contact" />
-        <Route component={Cleaning} exact path="/cleaning" />
+        <Route component={Dawlish} exact path="/dawlish" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
