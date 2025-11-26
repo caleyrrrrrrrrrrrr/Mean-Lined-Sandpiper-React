@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Navbar4 from '../components/navbar4'
-import HeroDawlish from '../components/hero-Dawlish'
+import HeroDawlish from '../components/hero-dawlish'
 import ContentList4 from '../components/content-list4'
 import './Dawlish.css'
 
@@ -33,7 +33,7 @@ const Dawlish = (props) => {
         heading11={
           <Fragment>
             <span className="Dawlish-text22">
-              The Bookcase Dawlish Services
+              The Bookcase Dawlish
             </span>
           </Fragment>
         }
