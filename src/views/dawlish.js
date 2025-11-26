@@ -20,9 +20,9 @@ const Dawlish = (props) => {
       <HeroDawlish
         rootClassName="hero-Dawlishroot-class-name"
       ></HeroDawlish>
-      <ContentList4
-        imageSrc="/e45cc3c8-1a6c-4d1b-b0f3-5e5260aced81-200w.jpg"
-      ></ContentList4>
+      <ContentList4>
+        {/* imageSrc="/e45cc3c8-1a6c-4d1b-b0f3-5e5260aced81-200w.jpg" */}
+      </ContentList4>
     </div>
   )
 }

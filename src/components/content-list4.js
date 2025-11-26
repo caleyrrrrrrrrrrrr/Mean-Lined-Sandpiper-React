@@ -26,23 +26,22 @@ const ContentList4 = (props) => {
                   <Fragment>
                     <span className="content-list4-text12">
                       <span>
-Come and write your heart out in beautiful Dawlish, by the sea! Just twelve minutes along the Riviera Line from Exeter UNESCO City of Literature and a ten minute walk from the sea. 
-
-The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
+                        Come and write your heart out in beautiful Dawlish, by the sea! Just twelve minutes along the Riviera Line from Exeter UNESCO City of Literature and a ten minute walk from the sea. 
+                      </span>
+                      <br></br>
+                      <span>
+                       The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
 re-charge. Ascend the spiral staircase to the private balcony and enter via the sliding glass door. Surrounded by books, you will have a much loved ancient writing table, 5G internet connection, notebooks, blankets, a king sized bed furnished with French linen and your own little kitchen filled with plants. 
-
-Across the road is the Manor House Garden filled with subtropical plants and benches, ideal for sitting and contemplating by Dawlish Water, a red river which runs down to the Atlantic Ocean. 
-
-A five minute stroll will bring you to The Dawlish Bookshop, where you will find a book voucher waiting for you, with compliments of The Bookcase. 
-                      </span>
-                      <br></br>
-                      <span>
-                        Para 2
                       </span>
                       <br></br>
                       <br></br>
                       <span>
-                        Contact me now book your Dawlish stay!
+                        Across the road is the Manor House Garden filled with subtropical plants and benches, ideal for sitting and contemplating by Dawlish Water, a red river which runs down to the Atlantic Ocean. 
+                      </span>
+                      <br></br>
+                      <br></br>
+                      <span>
+                        A five minute stroll will bring you to The Dawlish Bookshop, where you will find a book voucher waiting for you, with compliments of The Bookcase. 
                       </span>
                       <br></br>
                     </span>
@@ -54,6 +53,51 @@ A five minute stroll will bring you to The Dawlish Bookshop, where you will find
                 src={props.imageSrc}
                 className="content-list4-image"
               />
+            
+            </li>
+            <li className="content-list4-li10 thq-flex-column list-item">
+              <h3 className="thq-heading-3">
+                {props.heading9 ?? (
+                  <Fragment>
+                    <span className="content-list4-text34">
+                      <span>Dawlish</span>
+                      <br></br>
+                    </span>
+                  </Fragment>
+                )}
+              </h3>
+              <p className="thq-body-small content-list4-content9">
+                {props.content9 ?? (
+                  <Fragment>
+                    <span className="content-list4-text12">
+                      <span>
+Dawlish is a beautiful seaside town between Exeter and Torquay on the gentle South Devon Coast. Jane Austen stayed here in 1802 and 1804 and the town features in Sense and Sensibility.  
+                      </span>
+                      <br></br>
+                      <span>
+                       Dawlish is famous for its seaside location, dramatic red cliffs, sandy beaches and scenic railway (The Riviera Line) and perhaps, most iconically, its black swans.
+                      </span>
+                      <br></br>
+                      <br></br>
+                      <span>
+Wild swimmers will be pleased to know that Dawlish is a popular year round swim spot, with swimmers favouring sheltered Coryton Cove as a sheltered, year-round spot to take a dip. The outdoor Cove Cafe remains open year round to warm you up with a coffee or hot chocolate afterwards. 
+                      </span>
+                      <br></br>
+                      <br></br>
+                      <span>
+Fancy a warm swim and sauna? Cofton, spa, sauna and steam room (near Dawlish Warren) can be booked by non-residents: www.coftonholidays.co.uk
+                      </span>
+                      <br></br>
+                    </span>
+                  </Fragment>
+                )}
+              </p>
+              <img
+                alt={props.imageAlt}
+                src={props.imageSrc}
+                className="content-list4-image"
+              />
+            
             </li>
           </ul>
         </div>
