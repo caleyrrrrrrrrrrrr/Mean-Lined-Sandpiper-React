@@ -24,12 +24,12 @@ const Navbar4 = (props) => {
               )}
             </Link>
             <Link
-              to="/cleaning"
+              to="/dawlish"
               className="navbar4-link21 thq-body-small thq-link"
             >
               {props.link2 ?? (
                 <Fragment>
-                  <span className="navbar4-text23">Cleaning Service</span>
+                  <span className="navbar4-text23">Dawlish</span>
                 </Fragment>
               )}
             </Link>
@@ -106,12 +106,12 @@ const Navbar4 = (props) => {
                 )}
               </Link>
               <Link
-                to="/cleaning"
+                to="/dawlish"
                 className="navbar4-link22 thq-body-small thq-link"
               >
                 {props.link2 ?? (
                   <Fragment>
-                    <span className="navbar4-text23">Cleaning Service</span>
+                    <span className="navbar4-text23">Dawlish</span>
                   </Fragment>
                 )}
               </Link>
