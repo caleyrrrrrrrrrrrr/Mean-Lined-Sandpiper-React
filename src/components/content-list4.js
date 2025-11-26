@@ -15,7 +15,7 @@ const ContentList4 = (props) => {
                 {props.heading9 ?? (
                   <Fragment>
                     <span className="content-list4-text34">
-                      <span>Starting my holiday let,</span>
+                      <span>The Bookcase</span>
                       <br></br>
                     </span>
                   </Fragment>
@@ -26,52 +26,23 @@ const ContentList4 = (props) => {
                   <Fragment>
                     <span className="content-list4-text12">
                       <span>
-                        Starting my holiday let, I had no idea how difficult it
-                        would be to find a service to do changeovers to a five
-                        star standard. When you enter my property, it needs to
-                        feel as if no one has ever stayed here before. I want
-                        each guest to feel not only pampered and relaxed, but
-                        cared for - that is why the
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                      <span className="content-list4-text14">only</span>
-                      <span>
-                        {' '}
-                        thing that matters is
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                      <span className="content-list4-text16">everything</span>
-                      <span>.</span>
-                      <br></br>
-                      <span>
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
+Come and write your heart out in beautiful Dawlish, by the sea! Just twelve minutes along the Riviera Line from Exeter UNESCO City of Literature and a ten minute walk from the sea. 
+
+The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
+re-charge. Ascend the spiral staircase to the private balcony and enter via the sliding glass door. Surrounded by books, you will have a much loved ancient writing table, 5G internet connection, notebooks, blankets, a king sized bed furnished with French linen and your own little kitchen filled with plants. 
+
+Across the road is the Manor House Garden filled with subtropical plants and benches, ideal for sitting and contemplating by Dawlish Water, a red river which runs down to the Atlantic Ocean. 
+
+A five minute stroll will bring you to The Dawlish Bookshop, where you will find a book voucher waiting for you, with compliments of The Bookcase. 
                       </span>
                       <br></br>
                       <span>
-                        Initially, being based remotely the journeys to complete
-                        change over’s were difficult, but I just couldn’t trust
-                        it to anyone else. I wanted change over goodie packs,
-                        handwritten welcome cards and freshly laundered linen
-                        that smelled like spring. I wanted healthy houseplants
-                        and bunches of flowers to greet my guests; for my place
-                        to look and feel as perfect as possible.
+                        Para 2
                       </span>
                       <br></br>
                       <br></br>
                       <span>
-                        Contact me today to discuss your requirements.
+                        Contact me now book your Dawlish stay!
                       </span>
                       <br></br>
                     </span>
@@ -94,7 +65,7 @@ const ContentList4 = (props) => {
             {props.heading31 ?? (
               <Fragment>
                 <span className="content-list4-text10">
-                  Services available:
+                  Links to interesting things:
                 </span>
               </Fragment>
             )}

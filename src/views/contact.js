@@ -21,7 +21,7 @@ const Contact = (props) => {
         }
         link2={
           <Fragment>
-            <span className="contact-text11">Cleaning Service</span>
+            <span className="contact-text11">Dawlish</span>
           </Fragment>
         }
         action1={

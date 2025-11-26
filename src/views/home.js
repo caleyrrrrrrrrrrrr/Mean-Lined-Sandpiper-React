@@ -18,13 +18,13 @@ const Home = () => {
       {/* Navbar */}
       <Navbar4
         link1={<span className="home-text10">8b The Bookcase</span>}
-        link2={<span className="home-text11">Cleaning Services</span>}
+        link2={<span className="home-text11">Dawlish</span>}
         action1={<span className="home-text12">AirBnB</span>}
         action2={<span className="home-text15">Booking.com</span>}
         action11={<span className="home-text16">AirBnB</span>}
         action21={<span className="home-text19">Booking.com</span>}
         link1Url="/"
-        link2Url="/cleaning"
+        link2Url="/dawlish"
         rootClassName="navbar4root-class-name"
       />
 
