@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import Navbar4 from '../components/navbar4'
 import HeroDawlish from '../components/hero-dawlish'
 import ContentList4 from '../components/content-list4'
-import './Dawlish.css'
+import './dawlish.css'
 
 const Dawlish = (props) => {
   return (
