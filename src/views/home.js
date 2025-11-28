@@ -30,16 +30,6 @@ const Home = () => {
 
       {/* Hero Section */}
       <HeroBookcase
-        heading1={<span className="home-text31">Welcome to 8b The Bookcase</span>}
-        content1={
-          <span className="home-text22">
-            Just twelve minutes walk from the sea and the train station, The Bookcase is tucked away in a quiet part of Dawlish, Devon.
-            <br /><br />
-            Curl up with a book or write your novel, in this calm, cosy oasis. Find plenty of blankets, notebooks and inspiration here. Ideal for readers, wild swimmers and those looking to simply rest and recharge.
-            <br /><br />
-            Enquire directly for the best deals!
-          </span>
-        }
         action1={<span className="home-text20">AirBnB</span>}
         action11={<span className="home-text21">Booking.com</span>}
         action111={<span className="home-text32">Contact direct</span>}
