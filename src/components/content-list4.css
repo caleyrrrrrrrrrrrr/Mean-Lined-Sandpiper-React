@@ -6,6 +6,24 @@
   align-items: center;
   flex-direction: column;
 }
+.content-list4-container a,
+.content-list4-container a:visited {
+  color: #1e6fb3; /* blue link color */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+.content-list4-container a:hover {
+  color: #144f82;
+  text-decoration-color: rgba(0,0,0,0.2);
+}
+
+.content-list4-container a:focus {
+  outline: 3px solid rgba(30,111,179,0.18);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
  
 .content-list4-max-width {
   width: 100%;

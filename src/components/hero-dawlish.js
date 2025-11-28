@@ -26,20 +26,22 @@ const HeroDawlish = (props) => {
               </Fragment>
             )}
           </h1>
-          <h3 className="hero-dawlish-text2 thq-heading-3">
+        {/*
+         <h3 className="hero-dawlish-text2 thq-heading-3">
             {props.content1 ?? (
               <Fragment>
                 <span className="hero-dawlish-text6">
-                  dawlish hero text
+                  Things to do and 
                 </span>
               </Fragment>
-            )}
+            )} 
           </h3>
+        */}
         </div>
           <a href="/contact" className="thq-button-filled">
             {props.action1 ?? (
               <Fragment>
-                <span className="hero-dawlish-text5">Contact Us</span>
+                <span className="hero-dawlish-text5">Book now</span>
               </Fragment>
             )}
           </a>
