@@ -15,45 +15,6 @@ const ContentList4 = (props) => {
                 {props.heading9 ?? (
                   <Fragment>
                     <span className="content-list4-text34">
-                      <span>The Bookcase</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                )}
-              </h3>
-              <p className="thq-body-small content-list4-content9">
-                {props.content9 ?? (
-                  <Fragment>
-                    <span className="content-list4-text12">
-                      <span>
-                        Come and write your heart out in beautiful Dawlish, by the sea! Just twelve minutes along the Riviera Line from Exeter UNESCO City of Literature and a ten minute walk from the sea. 
-                      </span>
-                      <br></br>
-                      <span>
-                       The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
-re-charge. Ascend the spiral staircase to the private balcony and enter via the sliding glass door. Surrounded by books, you will have a much loved ancient writing table, 5G internet connection, notebooks, blankets, a king sized bed furnished with French linen and your own little kitchen filled with plants. 
-                      </span>
-                      <br></br>
-                      <br></br>
-                      <span>
-                        Across the road is the Manor House Garden filled with subtropical plants and benches, ideal for sitting and contemplating by Dawlish Water, a red river which runs down to the Atlantic Ocean. 
-                      </span>
-                      <br></br>
-                      <br></br>
-                      <span>
-                        A five minute stroll will bring you to The Dawlish Bookshop, where you will find a book voucher waiting for you, with compliments of The Bookcase. 
-                      </span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                )}
-              </p>
-            </li>
-            <li className="content-list4-li10 thq-flex-column list-item">
-              <h3 className="thq-heading-3">
-                {props.heading9 ?? (
-                  <Fragment>
-                    <span className="content-list4-text34">
                       <span>Dawlish</span>
                       <br></br>
                     </span>

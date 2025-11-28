@@ -23,21 +23,24 @@ const HeroBookcase = (props) => {
             {props.content1 ?? (
               <Fragment>
                 <span className="hero-bookcase-text18">
-                  <span>
-                    Just twelve minutes walk from the sea and the train station, The Bookcase is tucked away in a quiet part of Dawlish, Devon.
-                  </span>
-                  <br></br>
-                  <br></br>
-                  <span>
-                    Curl up with a book or write your novel, in this calm, cosy
-                    oasis. Find plenty of blankets, notebooks and inspiration
-                    here. Ideal for readers, wild swimmers and those looking to
-                    simply rest and recharge.
-
-                    A reading retreat in which to read, write, think or simply be - surrounded by books.
-                    Immerse yourself in a story, or write your own, at The Bookcase. 
-                  </span>
-                  <br></br>
+                      <span>
+                        Come and write your heart out in beautiful Dawlish, by the sea! Just twelve minutes along the Riviera Line from Exeter UNESCO City of Literature and a ten minute walk from the sea. 
+                      </span>
+                      <br></br>
+                      <span>
+                       The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
+re-charge. Ascend the spiral staircase to the private balcony and enter via the sliding glass door. Surrounded by books, you will have a much loved ancient writing table, 5G internet connection, notebooks, blankets, a king sized bed furnished with French linen and your own little kitchen filled with plants. 
+                      </span>
+                      <br></br>
+                      <br></br>
+                      <span>
+                        Across the road is the Manor House Garden filled with subtropical plants and benches, ideal for sitting and contemplating by Dawlish Water, a red river which runs down to the Atlantic Ocean. 
+                      </span>
+                      <br></br>
+                      <br></br>
+                      <span>
+                        A five minute stroll will bring you to The Dawlish Bookshop, where you will find a book voucher waiting for you, with compliments of The Bookcase. 
+                      </span>
                   <br></br>
                   <span>Enquire directly for the best deals!</span>
                   <br></br>
