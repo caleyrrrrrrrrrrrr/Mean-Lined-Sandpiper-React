@@ -131,6 +131,7 @@ ContentList4.propTypes = {
   heading51111: PropTypes.element,
   content9: PropTypes.element,
   imageSrc: PropTypes.string,
+  imageSrc2: PropTypes.string,
   imageAlt: PropTypes.string,
   heading51: PropTypes.element,
   heading5: PropTypes.element,
