@@ -190,9 +190,6 @@
 
 .content-list4-grid-text {
   grid-area: text;
-  color: var(--dl-color-gray-800, #1f2937);
-  line-height: 1.6;
-  font-size: 1rem;
 }
 
 /* ensure links inside grid look clickable (if not already set) */
