@@ -161,24 +161,26 @@
 
 .content-list4-grid-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 60%;
   grid-template-areas: "image text";
   align-items: center;
   gap: 1.25rem;
   min-height: 220px;
+  max-width: 980px;       /* limit row width */
+  margin-left: auto;      /* center row on page */
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Keep the alternating layout but keep the whole row centered */
 .content-list4-grid-row.reverse {
   grid-template-areas: "text image";
 }
 
-.content-list4-grid-image {
-  grid-area: image;
-  display: block;
-}
-
+/* image should fill its column */
 .content-list4-grid-image img {
-  width: 50%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -186,30 +188,21 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
+/* Place the text block centered within the centered row (but keep text left-aligned for readability) */
 .content-list4-grid-text {
   grid-area: text;
-  display: flex;
-  align-items: center;   /* vertical centering of the inner text */
-  justify-content: center; /* horizontal centering within the text column */
-  text-align: center;    /* center paragraph text */
+  display: block;
+  align-self: center;
+  justify-self: center;     /* center the text block horizontally within the row */
+  max-width: 520px;         /* control line length so centering looks correct */
+  text-align: left;         /* keep paragraph text left-aligned for readability */
   color: var(--dl-color-gray-800, #1f2937);
   line-height: 1.6;
   font-size: 1rem;
   padding: 1rem;
 }
 
-/* ensure links inside grid look clickable (if not already set) */
-.content-list4-grid-text a,
-.content-list4-grid-text a:visited {
-  color: #1e6fb3;
-  text-decoration: underline;
-}
-
-.content-list4-grid-text a:hover {
-  color: #144f82;
-}
-
-/* Responsive: stack on small screens */
+/* Responsive: stack image above text on small screens */
 @media (max-width: 720px) {
   .content-list4-grid-row,
   .content-list4-grid-row.reverse {
@@ -218,5 +211,12 @@
       "image"
       "text";
     min-height: auto;
+    max-width: 100%;
+  }
+
+  .content-list4-grid-text {
+    justify-self: stretch;
+    text-align: center;
+    max-width: none;
   }
 }
