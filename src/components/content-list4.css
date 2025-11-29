@@ -153,3 +153,71 @@
     padding-left: var(--dl-layout-space-oneandhalfunits);
   }
 }
+
+
+/* Grid layout for content with alternating image/text */
+.content-list4-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-list4-grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image text";
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.content-list4-grid-row.reverse {
+  grid-template-areas: "text image";
+}
+
+.content-list4-grid-image {
+  grid-area: image;
+  display: block;
+}
+
+.content-list4-grid-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.content-list4-grid-text {
+  grid-area: text;
+  color: var(--dl-color-gray-800, #1f2937);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ensure links inside grid look clickable (if not already set) */
+.content-list4-grid-text a,
+.content-list4-grid-text a:visited {
+  color: #1e6fb3;
+  text-decoration: underline;
+}
+
+.content-list4-grid-text a:hover {
+  color: #144f82;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 720px) {
+  .content-list4-grid-row {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .content-list4-grid-row.reverse {
+    grid-template-areas:
+      "image"
+      "text";
+  }
+}
