@@ -17,14 +17,6 @@ const Home = () => {
 
       {/* Navbar */}
       <Navbar4
-        link1={<span className="home-text10">8b The Bookcase</span>}
-        link2={<span className="home-text11">Dawlish</span>}
-        action1={<span className="home-text12">AirBnB</span>}
-        action2={<span className="home-text15">Booking.com</span>}
-        action11={<span className="home-text16">AirBnB</span>}
-        action21={<span className="home-text19">Booking.com</span>}
-        link1Url="/"
-        link2Url="/dawlish"
         rootClassName="navbar4root-class-name"
       />
 
@@ -43,15 +35,6 @@ const Home = () => {
 
       {/* Reviews */}
       <Reviews
-        heading1={<span className="home-text37">Guest Reviews</span>}
-        review1={<span className="home-text33">Such a charming property, so peaceful and relaxing. Loved it and will definitely be back again. P.S. Even my husband picked up a book - first time in 35 years!</span>}
-        review2={<span className="home-text34">Thank you so much for having us here, it&apos;s such and amazing space, we absolutely loved it! :)</span>}
-        review3={<span className="home-text35">Your flat is a beautiful little hideaway - cosy, colourful and full of charm. We felt like we truly hit the reset button while we were here. &lt;3 Everything from the colours to the peaceful location near the beach made the perfect getaway!</span>}
-        review4={<span className="home-text36">Your flat is beautiful, it suited me perfectly for a weekend visiting a friend nearby. Thanks for the cream tea and other lovely delicacies that you left me. Best wishes.</span>}
-        author1Name={<span className="home-text38">Sheila &amp; Danny</span>}
-        author2Name={<span className="home-text39">Dan &amp; Maisy</span>}
-        author3Name={<span className="home-text40">Bheks &amp; Tatiana</span>}
-        author4Name={<span className="home-text41">Wendy</span>}
       />
     </div>
   )
