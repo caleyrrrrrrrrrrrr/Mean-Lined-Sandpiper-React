@@ -26,11 +26,13 @@
 }
  
 .content-list4-max-width {
+  max-width: 1100px;      /* limit overall content width */
   width: 100%;
-  display: flex;
-  max-width: var(--dl-layout-size-maxwidth);
-  align-items: center;
-  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;     /* small page padding */
+  padding-right: 1rem;
+  box-sizing: border-box;
 }
  
 .content-list4-content1 {
@@ -151,5 +153,78 @@
 @media(max-width: 479px) {
   .content-list4-ul4 {
     padding-left: var(--dl-layout-space-oneandhalfunits);
+  }
+}
+
+
+/* Grid layout for content with alternating image/text */
+.content-list4-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;    /* center rows inside the grid container */
+  box-sizing: border-box;
+}
+
+.content-list4-grid-row {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "image text";
+  align-items: center;
+  gap: 1.25rem;
+  min-height: 220px;
+  max-width: 980px;       /* limit row width */
+  margin-left: auto;      /* center row on page */
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep the alternating layout but keep the whole row centered */
+.content-list4-grid-row.reverse {
+  grid-template-areas: "text image";
+}
+
+/* image should fill its column */
+.content-list4-grid-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Place the text block centered within the centered row (but keep text left-aligned for readability) */
+.content-list4-grid-text {
+  grid-area: text;
+  display: block;
+  align-self: center;
+  justify-self: center;     /* center the text block horizontally within the row */
+  max-width: 520px;         /* control line length so centering looks correct */
+  text-align: left;         /* keep paragraph text left-aligned for readability */
+  color: var(--dl-color-gray-800, #1f2937);
+  line-height: 1.6;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* Responsive: stack image above text on small screens */
+@media (max-width: 720px) {
+  .content-list4-grid-row,
+  .content-list4-grid-row.reverse {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .content-list4-grid-text {
+    justify-self: stretch;
+    text-align: center;
+    max-width: none;
   }
 }
