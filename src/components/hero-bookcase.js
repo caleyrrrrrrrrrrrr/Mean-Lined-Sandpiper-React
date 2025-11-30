@@ -153,6 +153,11 @@ re-charge. Ascend the spiral staircase to the private balcony and enter via the 
               className="hero-bookcase-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
             />
             <img
+              alt={props.image7Alt}
+              src={props.image7Src}
+              className="hero-bookcase-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
+            />
+            <img
               alt="Hero Image"
               src="https://images.unsplash.com/photo-1534312527009-56c7016453e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
               className="hero-bookcase-placeholder-image21 thq-img-scale thq-img-ratio-1-1"
@@ -215,6 +220,8 @@ HeroBookcase.defaultProps = {
     'https://images.unsplash.com/photo-1552083974-186346191183?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&ixlib=rb-4.0.3&w=1500',
   image4Alt: 'Hero Image',
   image5Alt: 'Hero Image',
+  image7Src:  'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQ2MTY5MDEzMDE5NDQ4NTg0NQ==/original/430922ff-fa00-4984-ac6c-df2a220d7c45.jpeg?im_w=1440',
+  image7Alt: 'Hero Image',
 }
 
 HeroBookcase.propTypes = {
@@ -236,6 +243,8 @@ HeroBookcase.propTypes = {
   image2Src: PropTypes.string,
   image4Alt: PropTypes.string,
   image5Alt: PropTypes.string,
+  image7Src: PropTypes.string,
+  image7Alt: PropTypes.string,
 }
 
 export default HeroBookcase
