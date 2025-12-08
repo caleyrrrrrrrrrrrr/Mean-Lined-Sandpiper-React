@@ -89,7 +89,9 @@ const ContentList4 = (props) => {
                   </div>
                 ))}
               </div>
-
+<video autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+</video>
               {/*
               <img
                 alt={props.imageAlt}
