@@ -89,7 +89,7 @@ const ContentList4 = (props) => {
                   </div>
                 ))}
               </div>
-<video autoplay muted>
+<video muted autoplay>
   <source src="train-vid.mp4" type="video/mp4">
   </source>
 </video>
@@ -99,7 +99,7 @@ const ContentList4 = (props) => {
                 src={props.imageSrc}
                 className="content-list4-image"
               />
-            */}
+              */}
             </li>
           </ul>
         </div>
