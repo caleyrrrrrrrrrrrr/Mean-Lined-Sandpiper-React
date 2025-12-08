@@ -37,6 +37,10 @@ re-charge. Ascend the spiral staircase to the private balcony and enter via the 
                       </span>
                       <br></br>
                       <br></br>
+                      <img
+                        src={props.imageSrcHuts}
+                        className="content-list4-grid-image"
+                      />
                       <span>
                         Across the road is the Manor House Garden filled with subtropical plants and benches, ideal for sitting and contemplating by Dawlish Water, a red river which runs down to the Atlantic Ocean. 
                       </span>
@@ -227,6 +231,7 @@ HeroBookcase.defaultProps = {
   image7Src:  'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQ2MTY5MDEzMDE5NDQ4NTg0NQ==/original/430922ff-fa00-4984-ac6c-df2a220d7c45.jpeg?im_w=1440',
   image7Alt: 'Hero Image',
   imageSrcSunshine: '/IMG_2811.webp',
+  imageSrcHuts: 'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQ2MTY5MDEzMDE5NDQ4NTg0NQ==/original/01876efc-116c-4230-822b-03e89a33bf81.jpeg?im_w=1440'
 }
 
 HeroBookcase.propTypes = {
@@ -251,6 +256,7 @@ HeroBookcase.propTypes = {
   image7Src: PropTypes.string,
   image7Alt: PropTypes.string,
   imageSrcSunshine: PropTypes.element,
+  imageSrcHuts: Proptypes.element,
 }
 
 export default HeroBookcase
