@@ -27,6 +27,11 @@ const HeroBookcase = (props) => {
                         Come and write your heart out in beautiful Dawlish, by the sea! Just twelve minutes along the Riviera Line from Exeter UNESCO City of Literature and a ten minute walk from the sea. 
                       </span>
                       <br></br>
+                      <img
+                        src={props.imageSrcSunshine}
+                        className="hero-bookcase-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
+                      />
+                      props.imageSrcSunshine
                       <span>
                        The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
 re-charge. Ascend the spiral staircase to the private balcony and enter via the sliding glass door. Surrounded by books, you will have a much loved ancient writing table, 5G internet connection, notebooks, blankets, a king sized bed furnished with French linen and your own little kitchen filled with plants. 
@@ -222,6 +227,7 @@ HeroBookcase.defaultProps = {
   image5Alt: 'Hero Image',
   image7Src:  'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQ2MTY5MDEzMDE5NDQ4NTg0NQ==/original/430922ff-fa00-4984-ac6c-df2a220d7c45.jpeg?im_w=1440',
   image7Alt: 'Hero Image',
+  imageSrcSunshine: '/IMG_2811.webp',
 }
 
 HeroBookcase.propTypes = {
@@ -245,6 +251,7 @@ HeroBookcase.propTypes = {
   image5Alt: PropTypes.string,
   image7Src: PropTypes.string,
   image7Alt: PropTypes.string,
+  imageSrcSunshine: PropTypes.element,
 }
 
 export default HeroBookcase
