@@ -181,11 +181,8 @@
 }
 
 .content-list4-grid-image img {
-  width: 100%;
+  width: 80%;
   height: auto;
-  object-fit: cover;
   border-radius: 8px;
-  display: block;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   margin: auto
 }
