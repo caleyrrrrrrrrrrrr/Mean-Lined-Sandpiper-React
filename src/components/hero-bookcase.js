@@ -29,7 +29,7 @@ const HeroBookcase = (props) => {
                       <br></br>
                       <img
                         src={props.imageSrcSunshine}
-                        className="content-list4-grid-image"
+                        className="top-image"
                       />
                       <span>
                        The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
@@ -39,7 +39,7 @@ re-charge. Ascend the spiral staircase to the private balcony and enter via the 
                       <br></br>
                       <img
                         src={props.imageSrcHuts}
-                        className="content-list4-grid-image"
+                        className="top-image"
                       />
                       <span>
                         Across the road is the Manor House Garden filled with subtropical plants and benches, ideal for sitting and contemplating by Dawlish Water, a red river which runs down to the Atlantic Ocean. 
