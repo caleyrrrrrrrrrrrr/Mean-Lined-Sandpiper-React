@@ -29,9 +29,8 @@ const HeroBookcase = (props) => {
                       <br></br>
                       <img
                         src={props.imageSrcSunshine}
-                        className="hero-bookcase-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
+                        className="content-list4-grid-image"
                       />
-                      props.imageSrcSunshine
                       <span>
                        The Bookcase is a beautiful garret retreat, set up by a writer for writers. Here you will find a cozy rooftop space in which to read, write, think, reflect and 
 re-charge. Ascend the spiral staircase to the private balcony and enter via the sliding glass door. Surrounded by books, you will have a much loved ancient writing table, 5G internet connection, notebooks, blankets, a king sized bed furnished with French linen and your own little kitchen filled with plants. 
