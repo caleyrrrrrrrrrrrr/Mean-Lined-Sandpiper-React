@@ -30,7 +30,7 @@ export async function onRequestPost({ request, env }) {
     // Brevo API payload
     const mailPayload = {
       sender: { email: "contact@8bthebookcase.co.uk", name: "Bookings @ The Bookcase" },
-      to: [{ email: "contact@8bthebookcase.co.uk", name: "Merriel @ The Bookcase" }],
+      to: [{ email: "merriel@8bthebookcase.co.uk", name: "Merriel @ The Bookcase" }],
       replyTo: { email: `${email}` , name: `${firstName} ${lastName}` },
       subject: `8b Booking request - ${firstName}`,
       textContent: `
